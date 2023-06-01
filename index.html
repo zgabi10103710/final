@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ouverture de la porte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('l-icone-ordinateur-lent-collection-vector-hpd9tf.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #cccccc;
+        }
+
+        .form-group input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .door {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-image: url('porte.jpeg');
+            background-size: cover;
+        }
+
+        .door.open {
+            background-image: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Porte</h1>
+    <div class="door"></div>
+    <form method="POST" action="Authantification.php">
+        <div class="form-group">
+            <label for="input1">WEB:</label>
+            <input type="text" id="input1" name="input1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="input2">OSINT:</label>
+            <input type="text" id="input2" name="input2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="input3">stéganographie n1 :</label>
+            <input type="text" id="input3" name="input3" required>
+        </div>
+
+        <div class="form-group">
+            <label for="input4">cryptographie:</label>
+            <input type="text" id="input4" name="input4" required>
+        </div>
+
+        <div class="form-group">
+            <label for="input5">réseau:</label>
+            <input type="text" id="input5" name="input5" required>
+        </div>
+
+        <div class="form-group">
+            <label for="input6">stéganographie n2 :</label>
+            <input type="text" id="input6" name="input6" required>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
